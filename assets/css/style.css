@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Dosis', sans-serif;;
 }
 
 html{
@@ -28,31 +28,45 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #FFC100;
+    color: #ffe084;
+    transition: .2s ease-out;
+    font-weight: 800;
+    font-size: 1vw;
+}
+
+nav ul li a:hover{
+    box-shadow: 0 0 10px 10px #ffe084;
+    background: #ffe084;
+    color: black;
+    padding: .5rem;
 }
 
 header#inicio{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding-left: 3rem;
 }
 
 header div#img{
     display: flex;
     justify-content: center;
+    padding: 3rem;
+    width: 60%;
 }
 
 header div p{
-    font-size: 2vw;
-    font-weight: 700;
+    font-size: 3vw;
+    font-weight: 600;
     color:#000;
+    text-align:center ;
 }
 
 header div span{
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: 500;
-    color: #050b3a;
+    color: black;
+    padding-left:40rem ;
 }
 
 header div#img img{
@@ -107,14 +121,20 @@ section#projetos div img#projeto1{
 section#projetos div h2{
     text-align: center;
     padding: 1rem;
+    font-weight: 800;
 }
 
 section#projetos div p{
     text-align: justify;
+    font-weight: 600;
 }
 
 section#projetos div{
     padding: 2rem;
+}
+
+section#projetos div a{
+    text-decoration:none ;
 }
 
 section#projetos div button{
@@ -134,14 +154,10 @@ section#projetos div button{
 
 section#projetos div button:hover{
     background-color: #000;
-    color: #FFC100;
+    color: #ffe084;
     transform: scale(1.2);
 }
 
-section#projetos div button a{
-    text-decoration: none;
-    color: black;
-}
 
 section#habilidades{
     padding: 3rem 10rem 3rem 10rem;
@@ -169,38 +185,38 @@ section#habilidades div{
 
 section#habilidades div span#python{
     background-color: #000;
-    color: #FFC100;
-    text-align: center;
-    padding: .3rem;
-    border-radius: 1rem;
-    width: 80%;
-}
-
-section#habilidades div span#html5{
-    background-color: #000;
-    color: #FFC100;
+    color: #ffe084;
     text-align: center;
     padding: .3rem;
     border-radius: 1rem;
     width: 60%;
 }
 
-section#habilidades div span#css{
+section#habilidades div span#html5{
     background-color: #000;
-    color: #FFC100;
+    color: #ffe084;
     text-align: center;
     padding: .3rem;
     border-radius: 1rem;
-    width: 35%;
+    width: 45%;
+}
+
+section#habilidades div span#css{
+    background-color: #000;
+    color: #ffe084;
+    text-align: center;
+    padding: .3rem;
+    border-radius: 1rem;
+    width: 10%;
 }
 
 section#habilidades div span#js{
     background-color: #000;
-    color: #FFC100;
+    color: #ffe084;
     text-align: center;
     padding: .3rem;
     border-radius: 1rem;
-    width: 15%;
+    width: 5%;
 }
 
 section#contato{
@@ -208,6 +224,7 @@ section#contato{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #fff3d1 ;
 }
 
 section#contato div#redes{
@@ -230,11 +247,11 @@ section#contato div#redes div#icons a{
     color: #000;
     font-size: 4rem;
     padding: 2rem;
-    transition: all .4s ease-out;
+    transition: all .1s ease-out;
 }
 
 section#contato div#redes div#icons a:hover{
-    color: #FFC100;
+    color: #ffe084;
 }
 
 section#contato div#redes div#icons a i{
@@ -267,33 +284,111 @@ section#contato div#form form input, textarea{
     width: 100%;
     padding: .5rem;
     font-size: 1.2rem;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     margin-top: .5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     outline: none;
+    background-color:#fff3d1 ;
+}
+
+section#contato div#form form textarea{
+    margin-bottom: 2rem;
 }
 
 section#contato div#form form label{
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 section#contato div#form form button{
-    border: 1px solid #000;
-    background-color: #FFC100;
-    color: #000;
-    padding: 1rem;
-    font-size: .8vw;
-    font-weight: 600;
-    border-radius: .5rem;
+    min-width: 250px;
+    min-height: 50px;
     display: block;
     margin: auto;
+    font-family: 'Nunito', sans-serif;
+    font-size: .8vw;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffe084;
+    background: black;
+    background: linear-gradient(90deg, rgb(17, 16, 14) 0%, rgb(56, 55, 39) 100%);
+    border: none;
+    border-radius: 600px;
+    box-shadow: 12px 12px 24px #ffd151;
+    transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
-    transition: .6s ease-out;
-    width: 40%;
+    outline: none;
+    position: relative;
+    padding: 10px;
 }
 
-section#contato div#form form button:hover{
-    background-color: #000;
-    color: #FFC100;
-    transform: scale(1.2);
+section#contato div#form form button::before {
+    content: '';
+    border-radius: 200px;
+    min-width: calc(240px + 12px);
+    min-height: calc(38px + 12px);
+    box-shadow: 0 0 60px #ffd151;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+section#contato div#form form button:hover, section#contato div#form form button:focus {
+    color: #ffe084;
+    transform: translateY(-6px);
+}
+
+section#contato div#form form button:hover::before, section#contato div#form form button:focus::before {
+    opacity: 1;
+}
+
+section#contato div#form form button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #ffe084;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.2s;
+}
+
+section#contato div#form form button:hover::after, section#contato div#form form button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 27px;
+        height: 27px;
+        opacity: 2;
+}
+    100% {
+        width: 225px;
+        height: 225px;
+        opacity: 2;
+}
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color:black ;
+    line-height: 25px;
+    padding: .4rem;
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+    color: #ffe084;
+    font-weight: 700;
 }
