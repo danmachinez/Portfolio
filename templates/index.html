@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
+
+</html>
 
 <head>
     <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -31,21 +33,22 @@
         </div>
 
         <div id="img">
-            <img src="./assets/images/databoy.png" alt="foto de um rapaz mexendo em uma tela" />
+            <img src="../static/images/databoy.png" alt="foto de um rapaz mexendo em uma tela" />
         </div>
     </header>
 
     <section id="sobre-mim">
 
         <div>
-            <img src="./assets/images/foto eu.png" alt="Foto 3x4 do danilo">
+            <img src="../static/images/foto eu.png" alt="Foto 3x4 do danilo">
         </div>
 
         <div>
             <p>
-                Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Delegadis
-                gente finis, bibendum egestas augue arcu ut est. Atirei o pau no gatis, per gatis num morreus. Copo
-                furadis é disculpa de bebadis, arcu quam euismod magna.
+                Me chamo Danilo, sou do Rio de Janeiro, RJ. Sempre fui apaixonado pela área de tecnologia, desde pequeno
+                gosto muito de jogos e há uns 3 anos conheci a área de programação e comecei a ver sobre. Por motivos
+                pessoais demorei a começar a estudar de fato para entrar na área e agora nas horas vagas e nas nem vagas
+                assim eu to me dedicando pra me inserir nesse mercado tão amplo e apaixonante!
             </p>
         </div>
 
@@ -54,14 +57,14 @@
 
     <section id="projetos">
         <div>
-            <img id='projeto1' src="./assets/images/projeto1.png" alt="Personagens Divertida mente">
+            <img id='projeto1' src="../static/images/projeto1.png" alt="Personagens Divertida mente">
             <h2>Jogo do Humor: Inside Out</h2>
             <p>Um página onde muda o humor da personagem principal do filme "Divertida mente"</p>
-            <a href='https://danmachinez.github.io/jogoDoHumor/'target='_blank'><button>Veja mais</button> </a>
+            <a href='https://danmachinez.github.io/jogoDoHumor/' target='_blank'><button>Veja mais</button> </a>
         </div>
 
         <div>
-            <img src="./assets/images/picsum.png" alt="">
+            <img src="../static/images/picsum.png" alt="">
             <h2>Projeto 2</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo illo quas rem voluptatibus facere culpa
                 nulla dicta rerum nisi incidunt, deleniti ea dolorum. Sequi illum dignissimos distinctio modi ipsa
@@ -70,7 +73,7 @@
         </div>
 
         <div>
-            <img src="./assets/images/picsum.png" alt="">
+            <img src="../static/images/picsum.png" alt="">
             <h2>Projeto 3</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam ratione illo expedita earum?
                 Veniam culpa quis maxime enim sunt modi porro eveniet? Impedit velit dolor ea, voluptatem consequatur
@@ -79,7 +82,7 @@
         </div>
 
         <div>
-            <img src="./assets/images/picsum.png" alt="">
+            <img src="../static/images/picsum.png" alt="">
             <h2>Projeto 4</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, modi! Velit ducimus placeat ad repudiandae
                 saepe mollitia voluptatibus. At doloremque esse adipisci magnam consectetur cupiditate fugit totam
@@ -122,11 +125,11 @@
                 <a href="https://www.linkedin.com/in/dmachinez/" target="_blank">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                 </a>
-    
+
                 <a href="https://github.com/danmachinez" target="_blank">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
-    
+
                 <a href="https://www.instagram.com/danilomachinez/" target="_blank">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
@@ -138,22 +141,26 @@
 
             <h3>Mande uma mensagem</h3>
 
-            <form>
+            <form action="/send" method="POST">
 
                 <label for="nome">Nome</label>
-                <input id="nome" name="nome" type="text">
+                <input id="nome" placeholder="Digite seu nome" name="nome" type="text">
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
 
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="10" rows="5"></textarea>
+                <textarea name="mensagem" id="mensagem" cols="10" rows="5" placeholder="Digite sua mensagem"></textarea>
 
-                <button id="enviar">Enviar</button>
+                <button type="submit" id="enviar">Enviar</button>
 
             </form>
 
-        </div>
+            <div id="carregamento">
+                <p>Enviando mensagem</p>
+                <div id="loader"></div>
+
+            </div>
 
     </section>
 
@@ -162,7 +169,7 @@
 
     </footer>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 
 </html>

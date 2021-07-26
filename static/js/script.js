@@ -5,6 +5,7 @@ let btnEnviar = document.querySelector('#enviar')
 let nomeLiberado = false
 let emailLiberado = false
 let txtAreaLiberado = false
+btnEnviar.disabled = true
 
 
 inputNome.addEventListener('keyup', () => {
@@ -33,7 +34,7 @@ inputEmail.addEventListener('keyup', () => {
 inputTxtArea.addEventListener('keyup', () =>{
     if (inputTxtArea.value == '' ||
         inputTxtArea.value == null ||
-        inputTxtArea.value.length > 50){
+        inputTxtArea.value.length < 10 || inputTxtArea.value.length > 100){
             inputTxtArea.style.borderColor = 'red'
             txtAreaLiberado = false
     } else{
@@ -50,5 +51,8 @@ inputTxtArea.addEventListener('keyup', () =>{
 })
 
 btnEnviar.addEventListener('click', () => {
-    alert('Formulário enviado com sucesso!')
+    let carregamento = document.querySelector('#carregamento')
+    carregamento.style.display = 'flex'
+    let form = document.querySelector('form')
+    form.style.display = 'none'
 })
