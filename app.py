@@ -8,8 +8,8 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": 'machdan.projetos@gmail.com',
-    "MAIL_PASSWORD": 'projetodan'
+    "MAIL_USERNAME": 'email_aqui',
+    "MAIL_PASSWORD": 'senha_aqui'
 }
 
 
