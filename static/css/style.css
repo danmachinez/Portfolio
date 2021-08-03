@@ -14,6 +14,7 @@ nav{
     background-color: #000;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 nav ul{
@@ -101,7 +102,7 @@ section#projetos{
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    flex-wrap: wrap;
+    position: relative;
 }
 
 section#projetos div{
@@ -136,6 +137,19 @@ section#projetos div{
 section#projetos div a{
     text-decoration:none ;
 }
+
+section#projetos a#config{
+    padding: 1rem;
+    text-align: end;
+    text-decoration: none;
+    color: #ffe084;
+    font-size: 2rem;
+    transition: all .2s ease-out;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
 
 section#projetos div button{
     min-width: 250px;
