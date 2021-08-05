@@ -83,7 +83,7 @@ section#sobre-mim{
 }
 
 section#sobre-mim div img{
-    width: 70%;
+    width: 85%;
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -105,38 +105,79 @@ section#projetos{
     position: relative;
 }
 
+section#projetos div#card {
+    padding: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+section#projetos div#card p {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+section#projetos div#card h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+section#projetos div#card img {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+}
+
+section#projetos div#card a {
+    border: 1px solid #ffd151;
+    background-color: #fff;
+    color: #ffd151;
+    font-size: 0.8vw;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+section#projetos div#card a:hover {
+    background-color: #ffd151;
+    color: black;
+}
+
+/* section#projetos div#card a {
+    border: 1px solid black;
+    background-color: #ffe084;
+    color: black;
+    font-size: 0.9vw;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+section#projetos div#card a:hover {
+    background-color: black;
+    color: #ffe084;
+    border: 1px solid #ffe084
+} */
+
 section#projetos div{
     width: 20rem;
 }
 
-section#projetos div img{
-    display: block;
-    margin: auto;
-}
-
-section#projetos div img#projeto1{
-    width: 115%;
-    
-}
-
-section#projetos div h2{
-    text-align: center;
-    padding: 1rem;
-    font-weight: 800;
-}
-
-section#projetos div p{
-    text-align: justify;
-    font-weight: 600;
-}
-
-section#projetos div{
-    padding: 2rem;
-}
-
-section#projetos div a{
-    text-decoration:none ;
-}
 
 section#projetos a#config{
     padding: 1rem;
@@ -150,84 +191,8 @@ section#projetos a#config{
     right: 1rem;
 }
 
-
-section#projetos div button{
-    min-width: 250px;
-    min-height: 50px;
-    display: block;
-    margin: auto;
-    font-family: 'Nunito', sans-serif;
-    font-size: .8vw;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-weight: 700;
-    color: #ffe084;
-    background: black;
-    background: linear-gradient(90deg, rgb(17, 16, 14) 0%, rgb(56, 55, 39) 100%);
-    border: none;
-    border-radius: 600px;
-    box-shadow: 12px 12px 24px #ffd151;
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-    padding: 10px;
-    margin-top: 25px;
-}
-
-section#projetos div button::before {
-    content: '';
-    border-radius: 50px;
-    min-width: calc(95px + 12px);
-    min-height: calc(95px + 12px);
-    box-shadow: 0 0 60px #ffd151;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all .3s ease-in-out 0s;
-}
-
-section#projetos div button:hover, section#projetos div button:focus {
-    color: #ffe084;
-    transform: translateY(-6px);
-}
-
-section#projetos div button:hover::before, section#projetos divbutton:focus::before {
-    opacity: 1;
-}
-
-section#projetos div button::after {
-    content: '';
-    width: 30px; height: 30px;
-    border-radius: 100%;
-    border: 6px solid #ffe084;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring .5s;
-}
-
-
-section#projetos div button:hover::after, section#projetos div button:focus::after {
-    animation: none;
-    display: none;
-}
-
-@keyframes ring {
-    0% {
-        width: 20px;
-        height: 20px;
-        opacity: 2;
-}
-    50% {
-        width: 25px;
-        height: 25px;
-        opacity: 2;
-}
+section#projetos a#config:hover{
+    color: black;
 }
 
 section#habilidades{

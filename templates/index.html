@@ -56,19 +56,22 @@
     </section>
 
     <section id="projetos">
-        
-        <a href='/adm' id='config'>
+
+        <a href='/login' id='config'>
             <i class="fa fa-cog" aria-hidden="true"></i>
         </a>
 
-        <div>
-            <img id='projeto1' src="../static/images/projeto1.png" alt="Personagens Divertida mente">
-            <h2>Jogo do Humor: Inside Out</h2>
-            <p>Um página onde muda o humor da personagem principal do filme "Divertida mente"</p>
-            <a href='https://danmachinez.github.io/jogoDoHumor/' target='_blank'>
-                <button>Veja mais</button> 
-            </a>
-        </div>
+            {% for p in projetos %}
+            <div id='card'>
+                <img src="{{p.imagem}}" alt="img-lorem">
+                <h2>{{p.nome}}</h2>
+                <p>{{p.descricao}}</p>
+                <a href="{{p.link}}" target="_blank">Veja mais</a>
+            </div>
+            {% endfor %}
+
+        </section>
+
 
     </section>
 
