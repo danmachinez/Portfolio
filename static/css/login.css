@@ -10,7 +10,7 @@ html, body {
 scroll-behavior: smooth;
 height: 100%;
 width: 100%;
-background-color: #aacbfb;
+background-color: #ffe084;
 }
 
 section#login {
@@ -33,7 +33,7 @@ border-radius: 2rem;
 section#login form h1{
 padding-bottom: 3rem;
 text-align: center;
-color: #0066ff ;
+color: black ;
 font-size: 2rem;
 }
 
@@ -52,9 +52,9 @@ font-size: 1.2rem;
 }
 
 section#login form button {
-border: 1px solid #0066ff;
+border: 1px solid black;
 background-color: #fff;
-color: #0066ff;
+color: black;
 font-size: 1rem;
 font-weight: 600;
 padding: 1rem;
@@ -69,13 +69,13 @@ width: 40%;
 }
 
 section#login form button:hover {
-background-color: #0066ff;
-color: #fff;
+background-color: #ffd151;
+color: black;
 }
 
 section#login form a{
 text-decoration: none;
-color: #0066ff;
+color: #ffd151;
 font-size: 2rem;
 position: absolute;
 }
